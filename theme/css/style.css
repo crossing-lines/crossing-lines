@@ -1,0 +1,280 @@
+
+@import url(http://fonts.googleapis.com/css?family=Crafty+Girls|The+Girl+Next+Door|Schoolbell|Averia+Sans+Libre:400,700,400italic,700italic);
+@import url("reset.css");
+
+* { margin: 0; padding: 0; }
+dd { margin-left: 23px }
+
+/* *** General Styles *** */
+
+body  {
+	background: url(../images/background2.jpg);
+    color: #4F3558;
+	/*font: 16px Georgia, "Times New Roman", Times, serif;*/
+	font: 16px "Averia Sans Libre", Times, serif;
+	text-align: center;
+}
+
+img {
+    border-width:5px 8px 10px 6px;
+    border-image:url(../images/photo-bg.png) 5 8 10 6 repeat stretch;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+pre { font-size:12px }
+
+a {
+    color: #4F3558;
+}
+
+a:hover {
+	background: #a7aa9e;
+    /*border-bottom: #e2509d dotted thick;*/
+}
+
+hr {
+    background:url(../images/hr.gif) repeat-x bottom center;
+    border: 0;
+}
+
+#header a,
+#topMenu a,
+.blogItem h2 a,
+.blogMeta a {
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.5em;
+	padding: 5px 0;
+}
+
+#header h2 {
+    position:relative;
+    top:-15px;
+}
+
+h1,
+h2,
+h3 { 
+	font-weight: normal;
+}
+
+blockquote {
+	background: url(../images/body.gif) top left repeat-y;
+	font-size: 18px;
+	font-style: italic;
+	padding: 5px 0 5px 30px;
+}
+
+ul,
+ol {
+	margin-left: 20px;
+	line-height: 1.6em;
+}
+
+/* *** Layout *** */
+
+#container { 
+	background: url(../images/spill.png) no-repeat top right;
+	margin: 0 auto;
+	text-align: left;
+	width: 780px;
+} 
+
+#header { 
+	background: url(../images/header.gif) no-repeat;
+    font-family: 'Crafty Girls', Arial, sans-serif;
+	height: 109px;
+	padding: 0 10px 0 20px;
+} 
+
+#topMenu {
+	background: url(../images/menubar.gif) no-repeat;
+	height: 48px;
+    text-align: left;
+}
+
+#sidebar {
+	float: right;
+	padding: 20px 30px 10px 0;
+	text-align: right;
+	width: 150px; 
+}
+
+#mainContent {
+	background: url(../images/body.gif) repeat-y;
+	padding: 20px 250px 10px 40px;
+} 
+
+#footer { 
+	background: url(../images/bottom.gif) no-repeat;
+	font-size: 14px;
+	height: 70px;
+	padding: 0 10px 0 20px;
+} 
+
+/* *** Header Styles *** */
+
+#header h1 {
+	font-size: 48px;
+	font-weight: normal;
+	padding: 20px 0 0 170px;
+}
+
+#header h2 {
+	font-size: 20px;
+	font-weight: normal;
+	text-align: right;
+
+}
+
+/*
+#header a:hover {
+	background: none;
+}
+    */
+
+/* *** Top Menu Styles *** */
+
+#topMenu ul {
+	font-size: 24px;
+	line-height: 1em;
+	list-style: none;
+	padding: 18px 0 0 20px;
+	text-align: left;
+    font-family: 'Crafty Girls', Arial, sans-serif;
+}
+
+#topMenu li {
+	display: inline;
+    position: relative;
+}
+
+.hback { 
+    float:left;
+}
+
+.hback a {
+    position: absolute;
+    list-style: none;
+    text-align:center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    font-size:35px;
+	padding: 8px 15px 15px 5px;
+    opacity: 0.0;
+    z-index: 1;
+    color: #FF0D8E;
+    min-width:90%;
+}
+
+.hback a:hover {
+    opacity: 0.3;
+    z-index: 1;
+}
+
+
+#topMenu a:hover {
+	background: none;
+}
+
+/* *** Blog Styles *** */
+
+.blogItem {
+	padding-bottom: 20px;
+}
+
+
+.blogItem h2,
+.blogItem h3 {
+	font-weight: bold;
+}
+
+.blogItem h2 a:hover,
+.blogItem h3 a:hover {
+	background: none;
+	text-decoration: underline;
+}
+
+.blogItem h1 {
+    font-size: 36px;
+}
+
+.blogItem h2 {
+    padding-top: 20px;
+	font-size: 30px;
+	background: url(../images/hr.gif) bottom left no-repeat;
+}
+
+.blogItem h3 {
+	background: url(../images/hr.gif) bottom left no-repeat;
+	font-size: 18px;
+	padding-bottom: 6px;
+}
+
+.blogItem h3.blogMeta {
+	background-position: top left;
+	padding: 6px 0 0 0;
+	text-align: right;
+}
+
+/* *** Sidebar Styles *** */
+
+#sidebar h3 {
+	font-size: 24px;
+	font-weight: normal;
+    font-family: 'Crafty Girls', Arial, sans-serif;
+}
+
+#sidebar ul {
+	line-height: 1.8em;
+	list-style: none;
+	padding-bottom: 20px;
+}
+
+#sidebar ul a {
+	text-decoration: none;
+}
+
+/* *** Comments Styles *** */
+
+#comments {
+	margin: 20px 0 0 20px;
+}
+
+#comments li {
+	margin-bottom: 10px;
+}
+
+.commentSep {
+	background: url(../images/hr.gif) bottom left no-repeat;
+}
+
+/* *** Footer Styles *** */
+
+#footer p {
+	padding: 30px 0 0 0;
+	text-align: center;
+}
+
+.floatR, .align-right {
+	float: right;
+	margin-left: 8px;
+}
+
+.floatL, .align-left { 
+	float: left;
+	margin-right: 8px;
+}
+
+.clearfloat {
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
